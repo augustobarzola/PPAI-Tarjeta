@@ -1,0 +1,17 @@
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\PPAI-Tarjeta.exe
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\PPAI-Tarjeta.deps.json
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\PPAI-Tarjeta.runtimeconfig.json
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\PPAI-Tarjeta.dll
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\ref\PPAI-Tarjeta.dll
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\bin\Debug\net6.0-windows\PPAI-Tarjeta.pdb
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.csproj.AssemblyReference.cache
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI_Tarjeta.Form1.resources
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.csproj.GenerateResource.cache
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.AssemblyInfoInputs.cache
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.AssemblyInfo.cs
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.csproj.CoreCompileInputs.cache
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.dll
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\ref\PPAI-Tarjeta.dll
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.pdb
+D:\Facu\DSI\2023\PPAI\PPAI-Tarjeta\obj\Debug\net6.0-windows\PPAI-Tarjeta.genruntimeconfig.cache
