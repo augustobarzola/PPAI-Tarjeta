@@ -37,7 +37,17 @@ namespace PPAI_Tarjeta.Modelo
             this.nombre = nombre;
             this.opcionesValidacion = opcionValidaciones;
         }
-        
+        public Validacion() {
+            this.audioMensajeValidacion = "";
+            this.nombre = "";
+            this.opcionesValidacion = new List<OpcionValidacion>();
+        }
 
+        //Metodo que devuelve el nombre concatanada con el audio del mensaje de la validacion
+        public string getMensajeValidacion() {
+            string ret = "";
+            ret = this.getNombre() + " " + this.getAudioMensajeValidacion();
+            return ret;
+        }
     }
 }

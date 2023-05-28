@@ -8,15 +8,15 @@ namespace PPAI_Tarjeta.Modelo
 {
     public class OpcionValidacion
     {
-        private string correcta;
+        private bool correcta;
         private string descripcion;
 
         //Metodos de seteo
-        public void setCorrecta(string correcta)
+        public void setCorrecta(bool correcta)
         {
             this.correcta = correcta;
         }
-        public string getCorrecta()
+        public bool getCorrecta()
         {
             return this.correcta;
         }
@@ -29,21 +29,21 @@ namespace PPAI_Tarjeta.Modelo
             return this.descripcion;
         }
         //Constructor
-        public OpcionValidacion(string correcta, string descripcion)
+        public OpcionValidacion(bool correcta, string descripcion)
         {
             this.correcta = correcta;
             this.descripcion = descripcion;
         }
         public OpcionValidacion()
         {
-            this.correcta = "";
+            this.correcta = false;
             this.descripcion = "";
         }
 
         //Metodo que comprueba si validacion es correcto
         public bool esCorrecta(string validar) {
             bool correcta = false;
-            if (validar == this.correcta) {
+            if (validar == this.descripcion) {
                 correcta = true;
             }
             return correcta;

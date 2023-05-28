@@ -60,13 +60,34 @@ namespace PPAI_Tarjeta.Modelo
             this.nroOrden = nroOrden;
             this.opcion = opcion;
         }
-
-        //metodo que devuelve todos los datos
-        public CategoriaLlamada getDatosCategoriaLlamada()
+        public CategoriaLlamada()
         {
-            CategoriaLlamada categoria = new CategoriaLlamada(this.getAudioMensajeOpciones(), this.getMensajeOpciones(), this.getNombre(), this.getNroOrden(), this.opcion);
-            return categoria;
+            this.audioMensajeOpciones = "";
+            this.mensajeOpciones = 0;
+            this.nombre = "";
+            this.nroOrden = 0;
+            this.opcion = new List<OpcionLlamada>();
         }
 
+        //metodo que devuelve informacion de la categoria dada su opcion y subopcion 
+         public CategoriaLlamada getDatosCategoriaLlamada(OpcionLlamada op)
+        {
+            CategoriaLlamada categoria=new CategoriaLlamada();
+            foreach (OpcionLlamada var in opcion) {
+                if (var.getNombre()==op.getNombre()  )
+                {
+                     categoria = new CategoriaLlamada(getAudioMensajeOpciones(), getMensajeOpciones(), getNombre(), getNroOrden(), this.opcion);
+
+                }
+            }
+            return categoria;
+        }
+        //metodo que busca las validaciones correspondiente a la opcion y subopcion seleccionadas
+        public List<Validacion> buscarValidaciones(OpcionLlamada opcion)
+        {
+            List<Validacion> lista = new List<Validacion>();
+            lista=opcion.getSubOpcionLlamada()[0].buscarValidaciones();
+            return lista;
+        }
     }
 }

@@ -46,14 +46,24 @@ namespace PPAI_Tarjeta.Modelo
         }
 
         //Metodo que controla que el dato a validar sea correcto
-        public bool esInformacionCorrecta() {
-            bool retorno;
-            if (this.opcionCorrecta.esCorrecta(this.datoAValidar))
-            {
+        public bool esInformacionCorrecta(string op) {
+            bool retorno=false;
+            
+                if (this.opcionCorrecta.esCorrecta(op))
+                {
+                    retorno = true;
+                }
+                else
+                    retorno = false;
+            return retorno;
+            }
+
+        //Metodo que verifica que el dato sea de validacion
+        public bool esValidacion(string nombreValidacion) {
+            bool retorno=false;
+            if (this.datoAValidar==nombreValidacion) {
                 retorno = true;
             }
-            else
-                retorno = false;
             return retorno;
         }
     }

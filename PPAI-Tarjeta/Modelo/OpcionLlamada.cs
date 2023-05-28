@@ -49,8 +49,15 @@ namespace PPAI_Tarjeta.Modelo
         {
             return this.nroOrden;
         }
-        public List<SubOpcionLlamada> subopcion { get => subopcionLlamada; set => subopcionLlamada = value; }
-        //El constructor
+        public void setSubOpcionLlamada(List<SubOpcionLlamada> lista)
+        {
+            this.subopcionLlamada = lista;
+        }
+        public List<SubOpcionLlamada> getSubOpcionLlamada()
+        {
+            return this.subopcionLlamada;
+        }
+         //El constructor
        
         public OpcionLlamada(string audioMensajeSubopciones, int mensajeSubopciones, string nombre, int nroOrden, List<SubOpcionLlamada> subOpcionLlamada)
         {
@@ -60,11 +67,32 @@ namespace PPAI_Tarjeta.Modelo
             this.nroOrden = nroOrden;
             this.subopcionLlamada = subOpcionLlamada;
         }
+        public OpcionLlamada()
+        {
+            this.audioMensajeSubopciones = "";
+            this.mensajeSubopciones = 0;
+            this.nombre = "";
+            this.nroOrden = 0;
+            this.subopcionLlamada = null;
+        }
+        //Metodo que devuelve todos los nombres de las subopciones (no estoy seguro si devuelve solo el nombre o toda la opcion)
+        public string getDatosOpcionSeleccionada(SubOpcionLlamada subop)
+        {
+            string retorno = "";
+            foreach (SubOpcionLlamada sub in subopcionLlamada) {
+                if (sub.getNombre() == subop.getNombre()) {
+                    retorno = getNombre();
+                }
+            }
 
-        //Metodo que devuelve todos los datos
-        public OpcionLlamada getDatosOpcionSeleccionada() {
-            OpcionLlamada opcion = new OpcionLlamada(this.getAudioMensajeSubopciones(), this.getMensajeSubopciones(), this.getNombre(), this.getNroOrden(),this.subopcionLlamada);
-            return opcion;
+            return retorno;
+        }
+
+        //metodo que devuelve las validacion de la opcion
+        public List<Validacion> buscarValidaciones(SubOpcionLlamada sub) {
+            List<Validacion> lista = new List<Validacion>();
+            lista=sub.buscarValidaciones();
+            return lista;
         }
 
     }

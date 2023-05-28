@@ -38,10 +38,18 @@ namespace PPAI_Tarjeta.Modelo
                 return false;
            }
 
-        //Metodo que comprueba si el estado es En Curso
+        //Metodo que comprueba si el estado es Iniciada
         public bool esIniciada()
         {
             if (this.nombre == "Iniciada")
+                return true;
+            else
+                return false;
+        }
+        //Metodo que comprueba si el estado es Iniciada
+        public bool esEnCurso()
+        {
+            if (this.nombre == "En Curso")
                 return true;
             else
                 return false;
